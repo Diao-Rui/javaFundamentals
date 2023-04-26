@@ -8,7 +8,7 @@ package javaSE.basicGrammar.test;
  * @Description: TODO
  * @Version 1.0
  */
-public class FloatDoubleExer {
+public class FloatDoubleExer1 {
     public static void main(String[] args) {
         float pi = 3.14f;
         float r1 = 1.2f, r2 = 2.5f, r3 = 6f;
