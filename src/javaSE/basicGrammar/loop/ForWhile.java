@@ -1,4 +1,4 @@
-package javaSE.basicGrammar;
+package javaSE.basicGrammar.loop;
 
 /**
  * @Author Diao Rui
