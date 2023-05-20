@@ -9,4 +9,27 @@ package javaSE.basicOOP.entity;
  * @Version 1.0
  */
 public class Person {
+    String name;
+    int age;
+    char gender;
+
+    public static void main(String[] args) {
+        Person person = new Person();
+        person.study();
+        person.addAge(15);
+        System.out.println(person.showAge());
+    }
+
+    public void study() {
+        System.out.println("studying");
+    }
+
+    public int showAge() {
+        return age;
+    }
+
+    public void addAge(int addAge) {
+        age = addAge;
+    }
+
 }

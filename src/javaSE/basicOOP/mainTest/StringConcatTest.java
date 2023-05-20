@@ -9,4 +9,22 @@ package javaSE.basicOOP.mainTest;
  * @Version 1.0
  */
 public class StringConcatTest {
+    public static void main(String[] args) {
+        StringConcatTest test = new StringConcatTest();
+        System.out.println(test.concat("-", "hello", "world"));
+        System.out.println(test.concat("-", "hello"));
+    }
+
+    public String concat(String operator, String... strs) {
+        if (strs == null || strs.length == 0)
+            return "";
+        String res = "";
+        for (int i = 0; i < strs.length; i++) {
+            if (i != strs.length - 1)
+                res += strs[i] + operator;
+            else
+                res += strs[i];
+        }
+        return res;
+    }
 }

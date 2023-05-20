@@ -15,7 +15,7 @@ public class Sort {
         quickSort(arr, 0, arr.length - 1);
         Utils.showArray(arr);
     }
-
+    //冒泡排序
     public static void bubbleSort(int[] array) {
         int n = array.length;
         int temp = 0;
@@ -37,35 +37,38 @@ public class Sort {
                 break;
         }
     }
-
-    public static void quickSort(int arr[], int left, int right) {
-        int part = partion(arr, left, right);
-        //排序基准左边
-        quickSort(arr, left, part - 1);
-        //排序基准右边
-        quickSort(arr, part + 1, right);
-    }
-
-    private static int partion(int[] arr, int left, int right) {
-        int part = arr[left];
-        while (left < right) {
-            //从右往左找一个比基准小得数
-            while (left < right && arr[right] >= part)
-                right--;
-            //从左往右找一个比基准大的数
-            while (left < right && arr[left] <= part)
-                left++;
-            if (left < right) {
-                int temp = arr[left];
-                arr[left] = arr[right];
-                arr[right] = temp;
+    //快速排序
+    public static void quickSort(int[] arr, int left, int right) {
+        if (left >= right) {
+            return;
+        }
+        //以第一个数为基准
+        int pivot = arr[left];
+        int i = left, j = right;
+        while (i <= j) {
+            //从前往后找第一个比基准大的数
+            while (arr[i] < pivot) {
+                i++;
+            }
+            //从后往前找第一个比基准小的数
+            while (arr[j] > pivot) {
+                j--;
+            }
+            //交换这两个数
+            if (i <= j) {
+                int tmp = arr[i];
+                arr[i] = arr[j];
+                arr[j] = tmp;
+                i++;
+                j--;
             }
         }
-        arr[left] = part;
-        return left;
+        //快排左边
+        quickSort(arr, left, j);
+        //快排右边
+        quickSort(arr, i, right);
     }
-
-
+    //选择排序
     public static void selectionSort(int arr[]) {
         for (int i = 0; i < arr.length - 1; i++) {
             int min = i;
@@ -78,4 +81,6 @@ public class Sort {
             arr[min] = temp;
         }
     }
+    //插入排序
+
 }

@@ -9,4 +9,18 @@ package javaSE.basicOOP.entity;
  * @Version 1.0
  */
 public class Student {
+    public String name;
+    public int age;
+    public char gender;
+    public double score;
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                ", gender=" + gender +
+                ", score=" + score +
+                '}';
+    }
 }
