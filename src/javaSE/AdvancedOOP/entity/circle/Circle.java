@@ -9,4 +9,24 @@ package javaSE.AdvancedOOP.entity.circle;
  * @Version 1.0
  */
 public class Circle {
+    public double Pi = 3.14;
+    private double radius;
+    public Circle(){
+        System.out.println("Circle constructor...");
+    }
+    public double getRadius() {
+        return radius;
+    }
+
+    public void setRadius(double radius) {
+        this.radius = radius;
+    }
+
+    public double findArea() {
+        return Pi * radius * radius;
+    }
+
+    public double findVolume() {
+        return 4 / 3.0 * Pi * radius * radius * radius;
+    }
 }

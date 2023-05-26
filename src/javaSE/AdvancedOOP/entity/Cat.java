@@ -8,5 +8,14 @@ package javaSE.AdvancedOOP.entity;
  * @Description: TODO
  * @Version 1.0
  */
-public class Cat {
+public class Cat extends Animal {
+    public void shut() {
+        System.out.println("喵喵叫");
+    }
+
+    @Override
+    public String toString() {
+        return super.toString();
+    }
+
 }

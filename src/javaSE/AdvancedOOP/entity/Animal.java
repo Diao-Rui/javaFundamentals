@@ -9,4 +9,26 @@ package javaSE.AdvancedOOP.entity;
  * @Version 1.0
  */
 public class Animal {
+    private String name;
+    private int age;
+
+    public void eat() {
+        System.out.println("可以吃饭");
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    @Override
+    public String toString() {
+        return "Animal{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                '}';
+    }
 }

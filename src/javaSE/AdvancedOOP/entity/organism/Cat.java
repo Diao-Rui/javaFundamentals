@@ -8,5 +8,18 @@ package javaSE.AdvancedOOP.entity.organism;
  * @Description: TODO
  * @Version 1.0
  */
-public class Cat {
+public class Cat extends Animal {
+    @Override
+    public void eat() {
+        System.out.println("猫吃鱼");
+    }
+
+    @Override
+    public void shout() {
+        System.out.println("喵喵叫");
+    }
+
+    public void work() {
+        System.out.println("抓老鼠");
+    }
 }

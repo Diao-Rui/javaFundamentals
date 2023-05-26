@@ -9,4 +9,15 @@ package javaSE.AdvancedOOP.entity.circle;
  * @Version 1.0
  */
 public class CircleTest {
+    public static void main(String[] args) {
+        Circle circle = new Circle();
+        circle.setRadius(2);
+        System.out.println("圆的面积为：" + circle.findArea());
+        System.out.println("圆的体积为：" + circle.findVolume());
+        Cylinder cylinder = new Cylinder();
+        cylinder.setRadius(2);
+        cylinder.setHeight(2);
+        System.out.println("圆柱的面积为：" + cylinder.findArea());
+        System.out.println("圆柱的体积为：" + cylinder.findVolume());
+    }
 }

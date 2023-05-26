@@ -9,4 +9,9 @@ package javaSE.dataStructure.queue;
  * @Version 1.0
  */
 public class MyQueue {
+    private int arr[];
+    private int rear;
+    private int front;
+
+
 }
