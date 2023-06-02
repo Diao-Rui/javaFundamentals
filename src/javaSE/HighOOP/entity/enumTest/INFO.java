@@ -9,4 +9,5 @@ package javaSE.HighOOP.entity.enumTest;
  * @Version 1.0
  */
 public interface INFO {
+    void info();
 }

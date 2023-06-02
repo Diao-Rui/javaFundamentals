@@ -8,5 +8,10 @@ package javaSE.HighOOP.entity.geometry;
  * @Description: TODO
  * @Version 1.0
  */
-public class GeometricObject {
+//抽象类
+public abstract class GeometricObject {
+    //抽象方法
+    public abstract double findArea();
+
+    public abstract double findPerimeter();
 }

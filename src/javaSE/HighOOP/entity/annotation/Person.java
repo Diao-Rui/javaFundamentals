@@ -8,5 +8,21 @@ package javaSE.HighOOP.entity.annotation;
  * @Description: TODO
  * @Version 1.0
  */
+@MyAnnotation(value = "class")
 public class Person {
+    private String name;
+    private int age;
+
+    @Deprecated
+    @MyAnnotation(value = "constructor")
+    public Person(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+    @MyAnnotation("method")
+    @SuppressWarnings(value = "123")
+    public String getName() {
+        return name;
+    }
+
 }

@@ -8,5 +8,14 @@ package javaSE.HighOOP.entity.apply;
  * @Description: TODO
  * @Version 1.0
  */
-public class Camera {
+public class Camera implements USB {
+    @Override
+    public void start() {
+        System.out.println("相机开始工作");
+    }
+
+    @Override
+    public void end() {
+        System.out.println("相机结束工作");
+    }
 }

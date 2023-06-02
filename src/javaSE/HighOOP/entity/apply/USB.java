@@ -9,4 +9,9 @@ package javaSE.HighOOP.entity.apply;
  * @Version 1.0
  */
 public interface USB {
+    //完整写法
+    public abstract void start();
+
+    //省略写法
+    void end();
 }

@@ -9,4 +9,16 @@ package javaSE.HighOOP.entity.inner;
  * @Version 1.0
  */
 public interface A {
+    //jdk8新特性默认方法
+    static void b() {
+        System.out.println("接口静态方法");
+    }
+
+    //jdk8新特性静态方法
+    default void a() {
+        System.out.println("接口默认方法");
+    }
+
+    //抽象方法
+    void method();
 }

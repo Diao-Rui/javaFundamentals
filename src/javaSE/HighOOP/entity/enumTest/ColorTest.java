@@ -9,4 +9,8 @@ package javaSE.HighOOP.entity.enumTest;
  * @Version 1.0
  */
 public class ColorTest {
+    public static void main(String[] args) {
+        //默认会调用对象的toString方法
+        System.out.println(Color.BLUE);
+    }
 }

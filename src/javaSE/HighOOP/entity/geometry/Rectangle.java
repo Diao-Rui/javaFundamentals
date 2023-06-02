@@ -8,5 +8,22 @@ package javaSE.HighOOP.entity.geometry;
  * @Description: TODO
  * @Version 1.0
  */
-public class Rectangle {
+public class Rectangle extends GeometricObject {
+    private double length;
+    private double width;
+
+    public Rectangle(double length, double width) {
+        this.length = length;
+        this.width = width;
+    }
+
+    @Override
+    public double findArea() {
+        return width * length;
+    }
+
+    @Override
+    public double findPerimeter() {
+        return 2 * (length + width);
+    }
 }

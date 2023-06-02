@@ -9,4 +9,7 @@ package javaSE.HighOOP.entity.inner;
  * @Version 1.0
  */
 public class C {
+    public void method2(){
+
+    }
 }

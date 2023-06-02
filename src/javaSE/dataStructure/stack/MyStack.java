@@ -12,9 +12,26 @@ public class MyStack {
     private int[] arr;
     private int top;
 
+    /*
+     * 用于子类继承使用
+     * */
+    MyStack() {
+        //默认长度为10
+        arr = new int[10];
+        top = -1;
+    }
+
     public MyStack(int length) {
         arr = new int[length];
         top = -1;
+    }
+
+    int[] getArr() {
+        return arr;
+    }
+
+    void setArr(int[] arr) {
+        this.arr = arr;
     }
 
     /*
@@ -38,7 +55,7 @@ public class MyStack {
         return top == -1;
     }
 
-    private boolean isFull() {
+    boolean isFull() {
         return top == arr.length - 1;
     }
 
@@ -62,6 +79,13 @@ public class MyStack {
             return;
         }
         top--;
+    }
+
+    /*
+     * 清空栈
+     * */
+    public void clear() {
+        top = -1;
     }
 
 }

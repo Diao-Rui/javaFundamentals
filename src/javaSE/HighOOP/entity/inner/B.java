@@ -8,5 +8,6 @@ package javaSE.HighOOP.entity.inner;
  * @Description: TODO
  * @Version 1.0
  */
-public class B {
+public abstract class B {
+    public abstract void method1();
 }

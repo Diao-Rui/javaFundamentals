@@ -8,5 +8,18 @@ package javaSE.HighOOP.entity.enumTest;
  * @Description: TODO
  * @Version 1.0
  */
-public enum IMI2 {
+public enum IMI2 implements INFO {
+    INFO("info") {
+        @Override
+        public void info() {
+            System.out.println("info");
+        }
+    };
+
+    IMI2(String name) {
+    }
+
+    public static void main(String[] args) {
+        IMI2.INFO.info();
+    }
 }

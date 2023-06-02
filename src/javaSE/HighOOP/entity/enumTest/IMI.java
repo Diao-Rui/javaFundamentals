@@ -8,5 +8,11 @@ package javaSE.HighOOP.entity.enumTest;
  * @Description: TODO
  * @Version 1.0
  */
-public enum IMI {
+public enum IMI implements INFO{
+    ;
+    //同一实现接口的方法，每个对象调用的都是同一个
+    @Override
+    public void info() {
+
+    }
 }

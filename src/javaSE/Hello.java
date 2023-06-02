@@ -1,5 +1,7 @@
 package javaSE;
 
+import org.junit.Test;
+
 /**
  * @Author Diao Rui
  * @Date 2023/4/21 17:47
@@ -13,4 +15,5 @@ public class Hello {
         System.out.println("hello world");
         Integer a;
     }
+
 }

@@ -8,5 +8,19 @@ package javaSE.AdvancedOOP.entity.man;
  * @Description: TODO
  * @Version 1.0
  */
-public class Man {
+public class Man extends Person {
+    @Override
+    public void eat() {
+        System.out.println("男人吃饭");
+    }
+
+    @Override
+    public void toilet() {
+        System.out.println("男人上厕所");
+    }
+
+    public void smoking() {
+        System.out.println("男人吸烟");
+    }
+
 }

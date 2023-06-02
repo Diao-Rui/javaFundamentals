@@ -1,8 +1,7 @@
 package javaSE.dataStructure.test;
 
 import javaSE.dataStructure.stack.MyStack;
-
-import java.util.Stack;
+import javaSE.dataStructure.stack.MySuperStack;
 
 /**
  * @Author Diao Rui
@@ -14,7 +13,10 @@ import java.util.Stack;
  */
 public class StackTest {
     public static void main(String[] args) {
+        System.out.println("测试普通栈");
         testStack();
+        System.out.println("测试无穷栈");
+        testSuperStack();
     }
 
     public static void testStack() {
@@ -24,5 +26,22 @@ public class StackTest {
         }
         System.out.println(stack.getTop());
         System.out.println(stack.getLength());
+        while (!stack.isEmpty()) {
+            System.out.print(stack.getTop() + " ");
+            stack.pop();
+        }
+    }
+
+    public static void testSuperStack() {
+        MySuperStack stack = new MySuperStack();
+        for (int i = 0; i < 20; i++) {
+            stack.push((int) (Math.random() * (100) + 1));
+        }
+        System.out.println(stack.getTop());
+        System.out.println(stack.getLength());
+        while (!stack.isEmpty()) {
+            System.out.print(stack.getTop() + " ");
+            stack.pop();
+        }
     }
 }

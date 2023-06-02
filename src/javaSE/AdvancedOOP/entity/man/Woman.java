@@ -8,5 +8,18 @@ package javaSE.AdvancedOOP.entity.man;
  * @Description: TODO
  * @Version 1.0
  */
-public class Woman {
+public class Woman extends Person {
+    @Override
+    public void eat() {
+        System.out.println("女人吃饭");
+    }
+
+    @Override
+    public void toilet() {
+        System.out.println("女人去上厕所");
+    }
+
+    public void makeup() {
+        System.out.println("女人化妆");
+    }
 }
