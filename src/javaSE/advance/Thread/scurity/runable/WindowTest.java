@@ -1,4 +1,4 @@
-package javaSE.advance.Thread.scurity;
+package javaSE.advance.Thread.scurity.runable;
 
 /**
  * @Author Diao Rui

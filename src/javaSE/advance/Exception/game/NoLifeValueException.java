@@ -8,5 +8,25 @@ package javaSE.advance.Exception.game;
  * @Description: TODO
  * @Version 1.0
  */
-public class NoLifeValueException {
+public class NoLifeValueException extends RuntimeException {
+    static final long serialVersionUID = -7034897190745766939L;
+
+    public NoLifeValueException() {
+    }
+
+    public NoLifeValueException(String message) {
+        super(message);
+    }
+
+    public NoLifeValueException(String message, Throwable cause) {
+        super(message, cause);
+    }
+
+    public NoLifeValueException(Throwable cause) {
+        super(cause);
+    }
+
+    public NoLifeValueException(String message, Throwable cause, boolean enableSuppression, boolean writableStackTrace) {
+        super(message, cause, enableSuppression, writableStackTrace);
+    }
 }

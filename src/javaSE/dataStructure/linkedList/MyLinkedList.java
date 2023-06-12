@@ -9,4 +9,26 @@ package javaSE.dataStructure.linkedList;
  * @Version 1.0
  */
 public class MyLinkedList {
+    private int value;
+    private MyLinkedList next;
+
+    public MyLinkedList(int value) {
+        this.value = value;
+    }
+
+    public int getValue() {
+        return value;
+    }
+
+    public void setValue(int value) {
+        this.value = value;
+    }
+
+    public MyLinkedList getNext() {
+        return next;
+    }
+
+    public void setNext(MyLinkedList next) {
+        this.next = next;
+    }
 }

@@ -1,5 +1,7 @@
 package javaSE.basicGrammar.Array;
 
+import javaSE.utils.ArrayUtilsStatic;
+
 /**
  * @Author Diao Rui
  * @Date 2023/5/13 15:20
@@ -26,7 +28,7 @@ public class ExtendArray {
         newArr[arr.length + 1] = 20;
         newArr[arr.length + 2] = 30;
         arr = newArr;
-        Utils.showArray(arr);
+        ArrayUtilsStatic.showArray(arr);
     }
 
     public static void test2() {
@@ -37,12 +39,12 @@ public class ExtendArray {
             arr[i - 1] = arr[i];
         }
         arr[arr.length - 1] = 0;
-        Utils.showArray(arr);
+        ArrayUtilsStatic.showArray(arr);
         index = 2;
         for (int i = arr.length - 1; i > index; i--) {
             arr[i] = arr[i - 1];
         }
         arr[index] = 10;
-        Utils.showArray(arr);
+        ArrayUtilsStatic.showArray(arr);
     }
 }

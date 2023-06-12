@@ -1,4 +1,4 @@
-package javaSE.advance.Thread.scurity;
+package javaSE.advance.Thread.scurity.runable;
 
 /**
  * @Author Diao Rui
@@ -9,19 +9,19 @@ package javaSE.advance.Thread.scurity;
  * @Version 1.0
  */
 public class Window implements Runnable {
-    int TICKET = 100;
+    int ticket = 100;
 
     @Override
     public void run() {
         while (true) {
-            if (TICKET > 0) {
+            if (ticket > 0) {
                 try {
                     Thread.sleep(10);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
-                System.out.println(Thread.currentThread().getName() + "售票窗口售票，票号为:" + TICKET);
-                TICKET--;
+                System.out.println(Thread.currentThread().getName() + "售票窗口售票，票号为:" + ticket);
+                ticket--;
             } else {
                 break;
             }

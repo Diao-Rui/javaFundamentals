@@ -1,5 +1,7 @@
 package javaSE.basicGrammar.Array;
 
+import javaSE.utils.ArrayUtilsStatic;
+
 /**
  * @Author Diao Rui
  * @Date 2023/5/13 14:15
@@ -29,7 +31,7 @@ public class FeaturesCompute {
             sum += arr[i];
         }
         System.out.println("分数为：");
-        Utils.showArray(arr);
+        ArrayUtilsStatic.showArray(arr);
         System.out.println("最大值为：" + max);
         System.out.println("最小值为：" + min);
         System.out.println("总和为：" + sum);
@@ -44,7 +46,7 @@ public class FeaturesCompute {
             sum += arr[i];
         }
         System.out.println("分数为：");
-        Utils.showArray(arr);
+        ArrayUtilsStatic.showArray(arr);
         System.out.println("去掉一个最高分和一个最低分的均值为：" + (sum - max - min) / 8.0);
     }
 
@@ -61,7 +63,7 @@ public class FeaturesCompute {
             }
         }
         //输出杨辉三角
-        Utils.showArray(arr);
+        ArrayUtilsStatic.showArray(arr);
     }
 
     //存储N个不相同的随机数
@@ -81,13 +83,13 @@ public class FeaturesCompute {
                 arr[i++] = temp;
             }
         }
-        Utils.showArray(arr);
+        ArrayUtilsStatic.showArray(arr);
     }
 
     //数组反转
     public static void reverse(int arr[]) {
         System.out.println("原数组为：");
-        Utils.showArray(arr);
+        ArrayUtilsStatic.showArray(arr);
         int i = 0, j = arr.length - 1;
         while (i < j) {
             int temp = arr[i];
@@ -97,6 +99,6 @@ public class FeaturesCompute {
             j--;
         }
         System.out.println("反转后的数组为：");
-        Utils.showArray(arr);
+        ArrayUtilsStatic.showArray(arr);
     }
 }

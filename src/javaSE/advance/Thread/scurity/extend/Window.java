@@ -8,5 +8,23 @@ package javaSE.advance.Thread.scurity.extend;
  * @Description: TODO
  * @Version 1.0
  */
-public class Window {
+public class Window extends Thread {
+    static int ticket = 100;
+
+    @Override
+    public void run() {
+        while (true) {
+            if (ticket > 0) {
+                try {
+                    Thread.sleep(10);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                System.out.println(Thread.currentThread().getName() + "窗口售票，票号:" + ticket);
+                ticket--;
+            } else {
+                break;
+            }
+        }
+    }
 }

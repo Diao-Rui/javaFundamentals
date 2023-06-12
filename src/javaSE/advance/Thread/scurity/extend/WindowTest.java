@@ -9,4 +9,9 @@ package javaSE.advance.Thread.scurity.extend;
  * @Version 1.0
  */
 public class WindowTest {
+    public static void main(String[] args) {
+        new Window().start();
+        new Window().start();
+        new Window().start();
+    }
 }

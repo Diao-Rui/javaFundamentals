@@ -1,4 +1,4 @@
-package javaSE.advance.Thread.scurity.extend;
+package javaSE.advance.Thread.scurity.extendSafe;
 
 /**
  * @Author Diao Rui

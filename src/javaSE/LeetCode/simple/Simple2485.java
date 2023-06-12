@@ -9,4 +9,23 @@ package javaSE.LeetCode.simple;
  * @Version 1.0
  */
 public class Simple2485 {
+    public static void main(String[] args) {
+        int n = 5;
+        System.out.println(pivotInteger(n));
+    }
+
+    public static int pivotInteger(int n) {
+        int i = 1, j = n;
+        int front = i, rear = j;
+        while (i < j) {
+            if (front < rear) {
+                i++;
+                front += i;
+            } else {
+                j--;
+                rear += j;
+            }
+        }
+        return front == rear ? i : -1;
+    }
 }

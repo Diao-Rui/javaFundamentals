@@ -1,5 +1,7 @@
 package javaSE.basicGrammar.Array;
 
+import javaSE.utils.ArrayUtilsStatic;
+
 /**
  * @Author Diao Rui
  * @Date 2023/5/12 9:55
@@ -12,7 +14,7 @@ public class OneDimArray {
     public static void main(String[] args) {
         //创建数组的同时给数组元素赋值
         int[] arr = new int[]{1, 2, 3};
-        Utils.showArray(arr);
+        ArrayUtilsStatic.showArray(arr);
         //创建数组不赋值
         double[] prices = new double[5];
         //创建数组并赋值

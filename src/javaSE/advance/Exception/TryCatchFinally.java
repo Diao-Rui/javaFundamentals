@@ -1,4 +1,4 @@
-package javaSE.advance;
+package javaSE.advance.Exception;
 
 import org.junit.Test;
 

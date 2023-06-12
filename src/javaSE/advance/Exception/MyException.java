@@ -8,5 +8,14 @@ package javaSE.advance.Exception;
  * @Description: TODO
  * @Version 1.0
  */
-public class MyException {
+public class MyException extends RuntimeException {
+    public static final long serialVersionUID = -7034897190745766939L;
+
+    public MyException() {
+        super();
+    }
+
+    public MyException(String message) {
+        super(message);
+    }
 }

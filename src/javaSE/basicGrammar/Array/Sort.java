@@ -1,5 +1,7 @@
 package javaSE.basicGrammar.Array;
 
+import javaSE.utils.ArrayUtilsStatic;
+
 /**
  * @Author Diao Rui
  * @Date 2023/5/12 17:19
@@ -13,7 +15,7 @@ public class Sort {
         int arr[] = {12, 25, 14, 23, 75, 26, 45};
         //bubbleSort(arr);
         quickSort(arr, 0, arr.length - 1);
-        Utils.showArray(arr);
+        ArrayUtilsStatic.showArray(arr);
     }
     //冒泡排序
     public static void bubbleSort(int[] array) {
@@ -31,7 +33,7 @@ public class Sort {
                     flag = true;
                 }
             }
-            Utils.showArray(array);
+            ArrayUtilsStatic.showArray(array);
             //当着一趟排序没有元素交换，说明整体已有序
             if (flag == false)
                 break;
