@@ -1,4 +1,4 @@
-package javaSE.LeetCode.simple;
+package javaSE.LeetCode.simple.simple301_600;
 
 import java.util.ArrayList;
 import java.util.List;

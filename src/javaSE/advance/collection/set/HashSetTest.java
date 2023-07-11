@@ -1,5 +1,6 @@
-package javaSE.advance.collection;
+package javaSE.advance.collection.set;
 
+import javaSE.advance.collection.Cat;
 import org.junit.Test;
 
 import java.util.HashSet;

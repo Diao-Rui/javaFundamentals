@@ -1,4 +1,4 @@
-package javaSE.advance.network;
+package javaSE.advance.network.tcp;
 
 import org.junit.Test;
 
@@ -15,7 +15,7 @@ import java.net.Socket;
  * @Date 2023/7/5 14:12
  * @PackageName:javaSE.advance.network
  * @ClassName: TCPTest
- * @Description: TODO
+ * @Description: 客户端发送信息给服务端
  * @Version 1.0
  */
 public class TCPTest {

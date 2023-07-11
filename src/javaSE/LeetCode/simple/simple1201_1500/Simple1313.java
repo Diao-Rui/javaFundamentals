@@ -1,4 +1,4 @@
-package javaSE.LeetCode.simple;
+package javaSE.LeetCode.simple.simple1201_1500;
 
 import javaSE.basicOOP.entity.ArrayUtils;
 

@@ -9,4 +9,11 @@ package javaSE.dataStructure.linkedList;
  * @Version 1.0
  */
 public class MyNode {
+    public int val;
+    public MyNode next;
+
+    public MyNode(int val) {
+        this.val = val;
+        next = null;
+    }
 }

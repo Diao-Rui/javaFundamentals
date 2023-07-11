@@ -9,4 +9,11 @@ package javaSE.advance.Thread.customerProductor.thread;
  * @Version 1.0
  */
 public class ThreadTest {
+    public static void main(String[] args) {
+        Clerk clerk = new Clerk();
+        Productor productor = new Productor(clerk, "生产者1");
+        Customer customer = new Customer(clerk, "消费者1");
+        productor.start();
+        customer.start();
+    }
 }

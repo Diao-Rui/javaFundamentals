@@ -30,7 +30,7 @@
       <option name="IGNORE_JAVADOC_PERIOD" value="true" />
       <option name="IGNORE_DUPLICATED_THROWS" value="false" />
       <option name="IGNORE_POINT_TO_ITSELF" value="false" />
-      <option name="myAdditionalJavadocTags" value="PackageName:javaSE.advance.Thread.scurity.singleInstance,Author,Date,ClassName:,Description:,Version" />
+      <option name="myAdditionalJavadocTags" value="PackageName:javaSE.advance.Thread.scurity.singleInstance,Author,Date,ClassName:,Description:,Version,PackageName:javaSE.advance.date,PackageName:javaSE.advance.fileIo.io,PackageName:javaSE.advance.network,PackageName:javaSE.LeetCode.medium,PackageName:javaSE.project.companyGammer,PackageName:javaSE.advance.network.chat,PackageName:javaSE.advance.network.tcp" />
     </inspection_tool>
   </profile>
 </component>

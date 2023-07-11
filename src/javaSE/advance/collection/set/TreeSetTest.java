@@ -1,5 +1,6 @@
-package javaSE.advance.collection;
+package javaSE.advance.collection.set;
 
+import javaSE.advance.collection.User;
 import org.junit.Test;
 
 import java.util.Comparator;

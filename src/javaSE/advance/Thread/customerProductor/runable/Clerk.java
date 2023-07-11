@@ -8,5 +8,9 @@ package javaSE.advance.Thread.customerProductor.runable;
  * @Description: TODO
  * @Version 1.0
  */
-public class Clerk {
+public class Clerk implements Runnable{
+    @Override
+    public void run() {
+
+    }
 }

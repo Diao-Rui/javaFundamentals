@@ -1,4 +1,4 @@
-package javaSE.advance.collection;
+package javaSE.advance.collection.List;
 
 import java.util.HashSet;
 import java.util.Set;

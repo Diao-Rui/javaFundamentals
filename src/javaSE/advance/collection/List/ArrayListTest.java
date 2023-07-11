@@ -1,5 +1,6 @@
-package javaSE.advance.collection;
+package javaSE.advance.collection.List;
 
+import javaSE.advance.collection.Cat;
 import org.junit.Test;
 
 import java.util.ArrayList;
@@ -27,6 +28,7 @@ public class ArrayListTest {
         List list1 = new ArrayList();
         list1.add(3);
         list1.add("lili");
+
 
         //add输入集合则将整个集合当做一个元素
         //addAll会将集合中所有元素分别存入集合中

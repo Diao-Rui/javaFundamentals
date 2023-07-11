@@ -1,4 +1,4 @@
-package javaSE.LeetCode.simple;
+package javaSE.LeetCode.simple.simple301_600;
 
 /**
  * @Author Diao Rui

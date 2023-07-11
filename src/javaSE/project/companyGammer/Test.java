@@ -9,4 +9,12 @@ package javaSE.project.companyGammer;
  * @Version 1.0
  */
 public class Test {
+    public static void main(String[] args) {
+        Company company = new Company("DR");
+        company.entry(new Employee("张三",18,15000,Position.ENGINEER));
+        company.entry(new Employee("李四",20,15000,Position.ENGINEER));
+        company.entry(new Employee("王五",20,15000,Position.ENGINEER));
+        CompanyUtils.saveInfo(company);
+        CompanyUtils.showEmployee(CompanyUtils.getInfo());
+    }
 }
